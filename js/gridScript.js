@@ -1,13 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
     const images = [
-        { src: "images/1.png", title: "Título 1" },
-        { src: "images/2.jpg", title: "Título 2" },
+        { src: "./images/1.png", title: "Título 1" },
+        { src: "./images/2.jpg", title: "Título 2" },
         { src: "images/3.jpg", title: "Título 3" },
-        { src: "images/4.gif", title: "Título 4" },
-        { src: "images/5.jpg", title: "Título 5" },
-        { src: "images/6.gif", title: "Título 6" },
-        { src: "images/7.gif", title: "Título 7" },
-        { src: "images/8.jpg", title: "Título 8" }
+        { src: "/images/4.gif", title: "Título 4" },
+        { src: "/images/5.jpg", title: "Título 5" },
+        { src: "/images/6.gif", title: "Título 6" },
+        { src: "/images/7.gif", title: "Título 7" },
+        { src: "/images/8.jpg", title: "Título 8" }
     ];
 
     const imageGrid = document.getElementById("image-grid");
