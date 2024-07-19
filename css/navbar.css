@@ -1,0 +1,60 @@
+:root {
+    --font-family: 'sans-serif';
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body.navbar {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 0.5rem 1.25rem;
+    font-family: var(--font-family);
+    font-weight: 700;
+    user-select: none;
+}
+
+.navbar img {
+    height: 8rem;
+    vertical-align: middle;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex: 1;
+}
+
+.navbar li {
+    margin: 0 0.9375rem;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 0.9375rem;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 0.25rem;
+}
+
+.navbar a:not(:has(img)):hover {
+    background-color: #575757;
+    color: #fff;
+    border-radius: 0.25rem;
+}
+
+.navbar .social-icons a {
+    font-size: 2.2rem;
+    margin-left: 0.9375rem;
+}
