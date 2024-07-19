@@ -26,10 +26,10 @@ body.index-page {
     top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 1.75rem;
+    font-size: 2vw;
     font-weight: 800;
     font-family: sans-serif;
-    padding: 0.75rem 1.25rem;
+    padding: 1vh 1vw;
     cursor: pointer;
     border: 0.15rem solid white;
     color: white;
