@@ -1,3 +1,7 @@
+:root {
+    --font-family: 'sans-serif';
+}
+
 .contact {
     display: flex;
     flex-direction: column;
