@@ -43,12 +43,7 @@ body.index-page {
     background: white;
 }
 
-.wip-message {
-    color: #ff9800;
-    font-size: 2rem;
-    text-align: center;
-    margin-top: 1.25rem;
-}
+
 
 html,
 body {
@@ -196,4 +191,10 @@ body.navbar {
 .navbar .social-icons a {
     font-size: 2.2rem;
     margin-left: 0.9375rem;
+}
+
+.wip-message {
+    color: #ff9800;
+    font-size: 2rem;
+    margin-top: 1.25rem;
 }
