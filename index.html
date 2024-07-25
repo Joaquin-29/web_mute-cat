@@ -1,8 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mute Cat</title>
+
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
 </head>
 
 <body class="index-page">
@@ -10,7 +19,17 @@
         <button class="enter-button">ENTER</button>
         
     </a> -->
-    <p class="wip-message">Work in Progress. Please check back later!</p>
+    <div class="loader-container">
+        <svg view-box="0 0 400 160">
+            <text x="50%" y="50%" dy=".32em" text-anchor="middle" class="text-body">
+                Mute-Cat
+            </text>
+            <text x="50%" y="50%" dy=".32em" dx="2.4em" text-anchor="middle" class="text-body">
+                .
+            </text>
+        </svg>
+    </div>
+    <p class="wip-message">Work in progress, check back later!</p>
 </body>
 
 </html>
