@@ -8,10 +8,6 @@
 
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
 </head>
 
 <body class="index-page">
@@ -20,16 +16,26 @@
         
     </a> -->
     <div class="loader-container">
-        <svg view-box="0 0 400 160">
-            <text x="50%" y="50%" dy=".32em" text-anchor="middle" class="text-body">
-                Mute-Cat
-            </text>
-            <text x="50%" y="50%" dy=".32em" dx="2.4em" text-anchor="middle" class="text-body">
-                .
-            </text>
-        </svg>
+        <img src="images/Logo-2.png" alt="Logo" class="logo">
+        <img src="images/Logo-1.png" alt="Text Image" class="text-image">
+        <a href="work.html" class="button" id="go-to-work-button">Go to Work</a>
     </div>
-    <p class="wip-message">Work in progress, check back later!</p>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const body = document.body;
+            body.classList.add('loaded');
+
+            const button = document.getElementById('go-to-work-button');
+            button.addEventListener('click', function (event) {
+                event.preventDefault();
+                body.classList.add('fade-out');
+                setTimeout(function () {
+                    window.location.href = 'work.html';
+                }, 1000);
+            });
+        });
+    </script>
 </body>
 
 </html>

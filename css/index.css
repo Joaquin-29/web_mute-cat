@@ -1,11 +1,9 @@
 :root {
-    --loader-text-color: #f6e9fe;
-    --loader-dot-color: #A51FF6;
-    --loader-bg: #100319;
+    --loader-bg: #febe01;
 }
 
 html {
-    font-size: 16px;
+    font-size: 1rem;
     font-family: 'Poppins', sans-serif;
     line-height: 1.5;
 }
@@ -37,93 +35,83 @@ body.index-page {
 
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
     padding: 0;
     background-color: var(--loader-bg);
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
 }
-
-/* .enter-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 1.75rem;
-    font-weight: 800;
-    font-family: sans-serif;
-    padding: 0.75rem 1.25rem;
-    cursor: pointer;
-    border: 0.15rem solid white;
-    color: white;
-    background: transparent;
-    border-radius: 0.625rem;
-    transition: background-color 0.5s ease, color 0.5s ease;
-}
-
-.enter-button:hover {
-    color: black;
-    background: white;
-} */
 
 .loader-container {
     position: fixed;
     inset: 0;
     z-index: 999;
     background-color: var(--loader-bg);
-    display: grid;
-    place-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     transition: opacity .4s ease-in-out, visibility .4s ease-in-out;
 }
 
-svg {
-    width: 40rem;
-    font-weight: 700;
+.hidden {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 
-svg text {
-    font-size: 7rem;
-    stroke-width: 2;
+.visible {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
 }
 
-svg text.text-body {
-    stroke: var(--loader-text-color);
-    animation: 4s infinite alternate animate-stroke;
+body.index-page.fade-out {
+    opacity: 0;
 }
 
-@keyframes animate-stroke {
-    0% {
-        fill: transparent;
-        stroke: var(--loader-text-color);
-        stroke-width: 3;
-        stroke-dashoffset: 25%;
-        stroke-dasharray: 0 32%;
-    }
-
-    50% {
-        fill: transparent;
-        stroke: var(--loader-text-color);
-        stroke-width: 3;
-    }
-
-    80%,
-    100% {
-        fill: var(--loader-text-color);
-        stroke: transparent;
-        stroke-width: 0;
-        stroke-dashoffset: -25%;
-        stroke-dasharray: 32% 0;
-    }
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
 }
 
-.wip-message {
-    color: var(--loader-text-color);
-    font-size: 2rem;
+.loader-container {
     text-align: center;
-    margin-bottom: 4rem;
-    z-index: 1000;
+    position: relative;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
+    width: 150%;
+    height: auto;
+    background-color: transparent;
+}
+
+.text-image {
+    display: block;
+    margin: 1.25rem auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.button {
+    margin-top: 1.25rem;
+    padding: 0.625rem 1.25rem;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 0.3125rem;
+    font-size: 1rem;
+    position: relative;
+}
+
+.button:hover {
+    background-color: #0056b3;
 }
