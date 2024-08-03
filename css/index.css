@@ -2,14 +2,19 @@
     --loader-bg: #febe01;
 }
 
+@font-face {
+    font-family: 'Brandon medium';
+    src: url(fonts/Brandon_med.otf) format(opentype);
+}
+
 html {
     font-size: 1rem;
-    font-family: 'Poppins', sans-serif;
     line-height: 1.5;
 }
 
 html,
 body {
+    font-family: 'Brandon medium', sans-serif;
     margin: 0;
     padding: 0;
     -webkit-user-select: none;
@@ -23,16 +28,6 @@ body.index-page::-webkit-scrollbar {
 }
 
 body.index-page {
-    /* background-image: url('../images/index_gif.gif'); */
-    /* background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: var(--font-family);
-    overflow: hidden; */
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -72,7 +67,6 @@ body.index-page.fade-out {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;

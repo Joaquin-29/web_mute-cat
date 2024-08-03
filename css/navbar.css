@@ -1,11 +1,16 @@
+@font-face {
+    font-family: 'Brandon medium';
+    src: url(fonts/Brandon_med.otf) format(opentype);
+}
+
+body {
+    margin: 0;
+    font-family: 'Brandon medium', sans-serif;
+}
+
 html, body {
     margin: 0;
     padding: 0;
-}
-
-body.navbar {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
 }
 
 .navbar {
@@ -14,7 +19,6 @@ body.navbar {
     justify-content: space-between;
     background-color: #febe01;
     padding: 1.25rem 1rem;
-    font-family: var(--font-family);
     font-weight: 700;
     font-size: large;
     user-select: none;
@@ -23,7 +27,7 @@ body.navbar {
 }
 
 .navbar img {
-    height: 8rem;
+    height: 6rem;
     vertical-align: middle;
 }
 
