@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Brandon medium';
+    src: url(fonts/Brandon_med.otf) format(opentype);
+}
+
+body {
+    font-family: 'Brandon medium', sans-serif;
+}
+
+.hidden {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.visible {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}

@@ -2,11 +2,6 @@
     --loader-bg: #febe01;
 }
 
-@font-face {
-    font-family: 'Brandon medium';
-    src: url(fonts/Brandon_med.otf) format(opentype);
-}
-
 html {
     font-size: 1rem;
     line-height: 1.5;
@@ -14,7 +9,6 @@ html {
 
 html,
 body {
-    font-family: 'Brandon medium', sans-serif;
     margin: 0;
     padding: 0;
     -webkit-user-select: none;
@@ -50,16 +44,6 @@ body.index-page {
     justify-content: center;
     align-items: center;
     transition: opacity .4s ease-in-out, visibility .4s ease-in-out;
-}
-
-.hidden {
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-
-.visible {
-    opacity: 1;
-    transition: opacity 1s ease-in-out;
 }
 
 body.index-page.fade-out {

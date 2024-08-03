@@ -6,6 +6,7 @@
     <title>Work</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/work.css">
+    <link rel="stylesheet" href="css/common.css">
 </head>
 
 <body class="work-page hidden">
@@ -13,40 +14,7 @@
     <div class="image-grid" id="image-grid"></div>
     <script src="js/gridScript.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script>
-        $(function () {
-            $("#navbar").load("navbar.html", function () {
-                const toggleButton = document.getElementById('navbar-toggle');
-                const navbarMenu = document.getElementById('navbar-menu');
-
-                if (toggleButton && navbarMenu) {
-                    toggleButton.addEventListener('click', function () {
-                        navbarMenu.classList.toggle('show');
-                    });
-                }
-
-                setTimeout(() => {
-                    document.body.classList.remove('hidden');
-                    document.body.classList.add('visible');
-                }, 100);
-            });
-
-            const links = document.querySelectorAll('a');
-
-            links.forEach(link => {
-                link.addEventListener('click', function (event) {
-                    event.preventDefault();
-                    const href = this.href;
-
-                    document.body.classList.add('fade-out');
-
-                    setTimeout(() => {
-                        window.location.href = href;
-                    }, 1000);
-                });
-            });
-        });
-    </script>
-
+    <script src="js/navbar.js"></script>
 </body>
+
 </html>
