@@ -22,17 +22,17 @@ body.work-page {
 body.hidden {
     opacity: 0;
     transition: opacity 1s ease-in-out, background-color 1s ease-in-out;
-    background-color: #febe01; /* Fondo inicial amarillo */
+    background-color: #febe01;
 }
 
 body.visible {
     opacity: 1;
     transition: opacity 1s ease-in-out;
-    background-color: #febe01; /* Mantener amarillo durante la transición */
+    background-color: #febe01;
 }
 
 body.bg-white {
-    background-color: white; /* Fondo blanco después de la transición */
+    background-color: white;
 }
 
 #navbar {
@@ -61,11 +61,12 @@ body.bg-white {
     justify-content: space-between;
     padding: 2rem;
     box-sizing: border-box;
-    display: none; /* Ocultar por defecto */
+    display: none;
+    margin-top: 8rem;
 }
 
 .detail-view.active {
-    display: flex; /* Mostrar cuando esté activo */
+    display: flex;
 }
 
 .detail-view .info-column {
@@ -127,7 +128,7 @@ body.bg-white {
 }
 
 .image-item:hover img {
-    transform: translate(-50%, -50%) scale(1.3); /* Ajuste de escala */
+    transform: translate(-50%, -50%) scale(1.3);
 }
 
 .image-item::before {
