@@ -5,12 +5,9 @@ html, body {
 
 .navbar {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     background-color: #febe01;
     padding: 1.25rem 1rem;
-    font-weight: 700;
-    font-size: large;
     user-select: none;
     width: 100%;
     box-sizing: border-box;
@@ -23,8 +20,6 @@ html, body {
 
 .navbar ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     display: flex;
     align-items: center;
     flex: 1;
@@ -39,6 +34,7 @@ html, body {
     color: white;
     text-decoration: none;
     padding: 0.5rem 1rem;
+    font-size: x-large;
     transition: background-color 0.3s, color 0.3s;
     border-radius: 0.25rem;
 }
@@ -50,7 +46,7 @@ html, body {
 }
 
 .navbar .social-icons a {
-    font-size: 2.2rem;
+    font-size: 2.1rem;
     display: flex;
     align-items: center;
 }
@@ -68,6 +64,7 @@ html, body {
     .navbar {
         flex-direction: column;
         font-size: large;
+        align-items: center;
     }
 
     .navbar ul {
@@ -80,6 +77,7 @@ html, body {
 
     .navbar ul.show {
         display: flex;
+        align-items: center;
     }
 
     .navbar-toggle {
