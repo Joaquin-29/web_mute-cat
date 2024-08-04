@@ -6,13 +6,3 @@
 body {
     font-family: 'Brandon medium', sans-serif;
 }
-
-body.hidden {
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-
-body.visible {
-    opacity: 1;
-    transition: opacity 1s ease-in-out;
-}

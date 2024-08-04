@@ -1,7 +1,13 @@
+@font-face {
+    font-family: 'Brandon medium';
+    src: url('../fonts/Brandon_med.otf') format('opentype');
+}
+
 html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Brandon medium', sans-serif;
 }
 
 body.work-page {
@@ -9,9 +15,24 @@ body.work-page {
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
-    background-color: white;
     width: 100%;
     overflow: auto;
+}
+
+body.hidden {
+    opacity: 0;
+    transition: opacity 1s ease-in-out, background-color 1s ease-in-out;
+    background-color: #febe01; /* Fondo inicial amarillo */
+}
+
+body.visible {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+    background-color: #febe01; /* Mantener amarillo durante la transición */
+}
+
+body.bg-white {
+    background-color: white; /* Fondo blanco después de la transición */
 }
 
 #navbar {

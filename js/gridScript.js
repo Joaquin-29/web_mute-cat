@@ -59,11 +59,19 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         detailView.classList.add("active");
-        // Scroll a la sección de detalles
         detailView.scrollIntoView({ behavior: 'smooth' });
     }
 
     detailView.addEventListener("click", () => {
         detailView.classList.remove("active");
     });
+
+    setTimeout(() => {
+        document.body.classList.remove('hidden');
+        document.body.classList.add('visible');
+        setTimeout(() => {
+            document.body.classList.remove('transition-bg');
+            document.body.classList.add('bg-white');
+        }, 1500);
+    }, 10);
 });
