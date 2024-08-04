@@ -85,8 +85,8 @@ body {
     background-color: transparent;
     color: white;
     text-decoration: none;
-    border: 2px solid white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    border: 0.125rem solid white;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1), 0 0.375rem 1.25rem rgba(0, 0, 0, 0.1);
     font-size: 1.5rem;
     position: absolute;
     bottom: 1rem;
@@ -97,10 +97,22 @@ body {
 .button:hover {
     background-color: white;
     color: black;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2), 0 0.375rem 1.25rem rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width: 600px) {
+.hand {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    height: 60vh; /* 60% de la altura de la página */
+    width: auto;
+}
+
+@media (max-width: 768px) {
+    .hand {
+        display: none;
+    }
+
     .button {
         position: static;
         margin: 1.25rem auto;

@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { src: "images/covers/Shelton.jpg", title: "Title 12" },
         { src: "images/covers/sitetracker.jpg", title: "Title 13" },
         { src: "images/covers/caveman.gif", title: "Title 14" },
+        { src: "images/covers/SYLR.png", title: "Title 15" }
     ];
 
     const imageGrid = document.getElementById("image-grid");
