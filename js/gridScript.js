@@ -1,13 +1,20 @@
 document.addEventListener("DOMContentLoaded", () => {
     const images = [
-        { src: "images/1.png", title: "Título 1", details: [{type: "img", src: "images/detail1_1.jpg"}, {type: "img", src: "images/detail1_2.jpg"}] },
-        { src: "images/2.jpg", title: "Título 2", details: [{type: "img", src: "images/detail2_1.jpg"}] },
-        { src: "images/3.jpg", title: "Título 3", details: [{type: "img", src: "images/detail3_1.jpg"}] },
-        { src: "images/4.gif", title: "Título 4", details: [{type: "img", src: "images/detail4_1.jpg"}] },
-        { src: "images/5.jpg", title: "Título 5", details: [{type: "img", src: "images/detail5_1.jpg"}] },
-        { src: "images/6.gif", title: "Título 6", details: [{type: "img", src: "images/detail6_1.jpg"}] },
-        { src: "images/7.gif", title: "Título 7", details: [{type: "img", src: "images/detail7_1.jpg"}] },
-        { src: "images/8.jpg", title: "Título 8", details: [{type: "img", src: "images/detail8_1.jpg"}] }
+        // { src: "images/covers/", title: "Título 1", details: [{type: "img", src: "images/detail1_1.jpg"}, {type: "img", src: "images/detail1_2.jpg"}] },
+        { src: "images/covers/2024.jpg", title: "Title 1" },
+        { src: "images/covers/colorado_lottery.jpg", title: "Title 2" },
+        { src: "images/covers/dons_cabinets.jpg", title: "Title 3" },
+        { src: "images/covers/dragoons.jpg", title: "Title 4" },
+        { src: "images/covers/Friends_with_nature.gif", title: "Title 5" },
+        { src: "images/covers/GWU.gif", title: "Title 6" },
+        { src: "images/covers/IBD.jpg", title: "Title 7" },
+        { src: "images/covers/mcd.jpg", title: "Title 8" },
+        { src: "images/covers/Osito.jpg", title: "Title 9" },
+        { src: "images/covers/QUICKCHARGE.jpg", title: "Title 10" },
+        { src: "images/covers/reel.gif", title: "Title 11" },
+        { src: "images/covers/Shelton.jpg", title: "Title 12" },
+        { src: "images/covers/sitetracker.jpg", title: "Title 13" },
+        { src: "images/covers/caveman.gif", title: "Title 14" },
     ];
 
     const imageGrid = document.getElementById("image-grid");
