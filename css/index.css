@@ -30,14 +30,7 @@ body.fade-out {
 .logo {
     display: block;
     margin: 0 auto;
-    width: 10rem;
-    height: auto;
-}
-
-.text-image {
-    display: block;
-    margin: 2rem auto 0; /* Ajusta el margen según sea necesario */
-    width: 15rem; /* Ajusta el tamaño según sea necesario */
+    width: 20rem;
     height: auto;
 }
 
@@ -56,6 +49,9 @@ body.fade-out {
     width: 37vw;
     height: auto;
     transform-origin: bottom center;
+}
+
+.hand.animate {
     animation: rockOn 2.5s ease-in-out;
 }
 
