@@ -6,11 +6,16 @@ html, body {
 .navbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: #febe01;
-    padding: 1.25rem 1rem;
+    padding: 1rem 1rem;
     user-select: none;
     width: 100%;
     box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .navbar img {
@@ -24,10 +29,13 @@ html, body {
     align-items: center;
     flex: 1;
     justify-content: flex-end;
+    padding: 0;
+    margin: 0;
 }
 
 .navbar li {
     margin: 0 1rem;
+    position: relative;
 }
 
 .navbar a {
@@ -35,14 +43,35 @@ html, body {
     text-decoration: none;
     padding: 0.5rem 1rem;
     font-size: x-large;
-    transition: background-color 0.3s, color 0.3s;
-    border-radius: 0.25rem;
+    transition: color 0.3s, box-shadow 0.3s;
+    position: relative;
 }
 
-.navbar a:not(:has(img)):hover {
-    background-color: #febe01;
+.navbar a::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 0.2rem;
+    background-color: #fff;
+    transition: width 0.3s, left 0.3s;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.navbar a.active {
     color: #fff;
-    border-radius: 0.25rem;
+    font-weight: bold;
+}
+
+.navbar a.active::after {
+    width: 100%;
+    left: 0;
 }
 
 .navbar .social-icons a {
@@ -60,11 +89,17 @@ html, body {
     color: white;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .navbar {
         flex-direction: column;
         font-size: large;
         align-items: center;
+        padding-top: 1rem;
+    }
+
+    .navbar img {
+        height: 5rem;
+        vertical-align: middle;
     }
 
     .navbar ul {

@@ -13,5 +13,14 @@ document.addEventListener('DOMContentLoaded', function () {
             document.body.classList.remove('hidden');
             document.body.classList.add('visible');
         }, 50);
+
+        const currentLocation = window.location.href;
+        const menuItems = document.querySelectorAll('.navbar a');
+
+        menuItems.forEach(item => {
+            if (item.href === currentLocation) {
+                item.classList.add('active');
+            }
+        });
     });
 });
