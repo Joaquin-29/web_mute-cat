@@ -197,28 +197,68 @@ document.addEventListener("DOMContentLoaded", () => {
         imageGrid.appendChild(imageItem);
     });
 
+    function smoothScrollToTop(duration) {
+        const start = window.scrollY;
+        const startTime = 'now' in window.performance ? performance.now() : new Date().getTime();
+    
+        const documentHeight = Math.max(document.body.scrollHeight, document.documentElement.scrollHeight);
+        const windowHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+        const destinationOffset = 0;
+        const destinationOffsetToScroll = Math.round(documentHeight - destinationOffset < windowHeight ? documentHeight - windowHeight : destinationOffset);
+    
+        if ('requestAnimationFrame' in window === false) {
+            window.scroll(0, destinationOffsetToScroll);
+            return;
+        }
+    
+        function scroll() {
+            const now = 'now' in window.performance ? performance.now() : new Date().getTime();
+            const time = Math.min(1, ((now - startTime) / duration));
+            const timeFunction = time * (2 - time);
+            window.scroll(0, Math.ceil((timeFunction * (destinationOffsetToScroll - start)) + start));
+    
+            if (window.scrollY === destinationOffsetToScroll) {
+                return;
+            }
+    
+            requestAnimationFrame(scroll);
+        }
+    
+        scroll();
+    }
+    
     function showDetails(project, index) {
         infoColumn.innerHTML = `<h2>${project.title}</h2><p>${project.details.summary}</p>`;
-
+    
         contentColumn.innerHTML = '';
         project.details.media.forEach(mediaItem => {
             if (mediaItem.type === "img") {
                 const imgElement = document.createElement("img");
                 imgElement.src = mediaItem.src;
-                imgElement.style.width = "100%";
+                imgElement.style.width = "auto";
+                imgElement.style.maxWidth = "100%";
+                imgElement.style.maxHeight = "70vh";
+                imgElement.style.display = "block";
+                imgElement.style.margin = "auto";
+                imgElement.style.objectFit = "contain";
                 contentColumn.appendChild(imgElement);
             } else if (mediaItem.type === "video") {
                 const iframeElement = document.createElement("iframe");
                 iframeElement.src = mediaItem.src;
-                iframeElement.frameBorder = "0";
                 iframeElement.allow = "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture";
                 iframeElement.allowFullscreen = true;
-                iframeElement.style.width = "100%";
-                iframeElement.style.height = "315px";
+                iframeElement.style.width = "auto";
+                iframeElement.style.maxWidth = "100%";
+                iframeElement.style.maxHeight = "70vh";
+                iframeElement.style.display = "block";
+                iframeElement.style.margin = "auto";
                 contentColumn.appendChild(iframeElement);
             }
         });
-
+    
         detailView.classList.add("visible");
+    
+        smoothScrollToTop(1000);
     }
+    
 });

@@ -40,7 +40,7 @@ body.bg-white {
     width: 100%;
     color: white;
     text-align: center;
-    position: sticky;
+
     top: 0;
     z-index: 1000;
 }
@@ -164,12 +164,19 @@ body.bg-white {
 
 .content-column img, 
 .content-column iframe {
-    width: 100%;
-    height: auto;
+    width: auto; /* Ajusta el ancho automáticamente */
+    max-width: 100%; /* No excede el ancho del contenedor */
+    max-height: 70vh; /* No excede el 70% de la altura de la ventana */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: contain;
 }
 
 .content-column iframe {
-    height: 450px;
+    height: auto;
+    max-height: 70vh; /* Asegura una altura razonable */
+    aspect-ratio: 16/9; /* Mantiene una relación de aspecto estándar */
 }
 
 
