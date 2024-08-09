@@ -7,52 +7,44 @@
     <title>Contact</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="css/common.css">
-    <style>
-        .contact {
-            text-align: center;
-        }
-        
-        .contact p.name {
-            font-size: 1.3em;
-            font-weight: bold;
-            margin-top: 1.25em;
-        }
-        
-        .contact p {
-            margin: 0.5em 0;
-            font-size: 1.1em;
-        }
-        
-        .contact .contact-block {
-            margin-bottom: 2em;
-        }
-
-        .contact .location {
-            margin-bottom: 1.5em;
-        }
-    </style>
+    <link rel="stylesheet" href="css/contact.css">
 </head>
 
-<body class="hidden">
+<body>
     <div id="navbar"></div>
-    <div class="contact">
+
+    <div class="container">
         <h1>Contact Us</h1>
-        <div class="contact-block">
+        <form id="contact-form">
+            <div class="name-fields">
+                <input type="text" name="first-name" placeholder="First Name" required>
+                <input type="text" name="last-name" placeholder="Last Name" required>
+            </div>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="text" name="subject" placeholder="Subject" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+
+        <div class="contact-info">
             <p class="name">Fernando</p>
             <p>T: +598 99 743 474</p>
             <p>E: <a href="mailto:fernando@mute-cat.com">fernando@mute-cat.com</a></p>
-        </div>
-        <div class="contact-block">
+
             <p class="name">Florencia</p>
             <p>T: +598 92 829 982</p>
             <p>E: <a href="mailto:florencia@mute-cat.com">florencia@mute-cat.com</a></p>
+
+            <p class="location">Punta del Este, Uruguay</p>
+            <p>Follow us on <a href="https://www.instagram.com/mute_cat2024" target="_blank">Instagram</a></p>
+            <p>Follow us on <a href="https://www.youtube.com/@Mute-cat" target="_blank">YouTube</a></p>
         </div>
-        <p class="location">Punta del Este, Uruguay</p>
-        <p>Follow us on <a href="https://www.instagram.com/mute_cat2024" target="_blank">Instagram</a></p>
-        <p>Follow us on <a href="https://www.youtube.com/@Mute-cat" target="_blank">YouTube</a></p>
     </div>
+
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="js/navbar.js"></script>
 </body>
 
 </html>
+
+https://dlbhktie2ggmdxidyz72etzyu40scuiy.lambda-url.us-east-2.on.aws/ 
