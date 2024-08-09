@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
             details: {
                 summary: "Resumen de proyecto. Falta video en yt",
                 media: [
-                    { type: "video", src: "https://www.youtube.com/embed/dQw4w9WgXcQ" }
+                    { type: "video", src: "https://www.youtube.com/" }
                 ]
             }
         },
