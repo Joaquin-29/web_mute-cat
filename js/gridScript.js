@@ -17,7 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 summary: "Resumen de proyecto.",
                 media: [
                     { type: "video", src: "https://www.youtube.com/embed/r7Xn22dSd7A?si=iPbQfcjn709T4Hhs" },
-                    { type: "img", src: "images/details/colorado_lottery_detail1.jpg" }
                 ]
             }
         },
@@ -28,7 +27,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 summary: "Resumen de proyecto.",
                 media: [
                     { type: "video", src: "https://www.youtube.com/embed/Ytm0Zh1-k5I?si=FpYMZJs4tNxmSaGh" },
-                    { type: "img", src: "images/details/dons_cabinets_detail1.jpg" }
+                    { type: "img", src: "images/dc_1.jpeg" },
+                    { type: "img", src: "images/dc_2.jpeg" },
+                    { type: "img", src: "images/dc_3.jpeg" }
                 ]
             }
         },
@@ -38,9 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
             details: {
                 summary: "Resumen de proyecto.",
                 media: [
-                    { type: "video", src: "https://www.youtube.com/embed/RM2udpaIsBY?si=uYwXnbaSkcGqNali" },
-                    { type: "img", src: "images/details/dragoons_detail1.jpg" },
-                    { type: "img", src: "images/details/dragoons_detail2.jpg" }
+                    { type: "video", src: "https://www.youtube.com/embed/RM2udpaIsBY?si=uYwXnbaSkcGqNali" }
                 ]
             }
         },
@@ -50,8 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
             details: {
                 summary: "Resumen de proyecto.",
                 media: [
-                    { type: "video", src: "https://www.youtube.com/embed/nnWqfMagt20?si=vKIdf5VrNQJGTYVG" },
-                    { type: "img", src: "images/details/Friends_with_nature_detail1.jpg" }
+                    { type: "video", src: "https://www.youtube.com/embed/nnWqfMagt20?si=vKIdf5VrNQJGTYVG" }
                 ]
             }
         },
@@ -61,8 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
             details: {
                 summary: "Resumen de proyecto.",
                 media: [
-                    { type: "video", src: "https://www.youtube.com/embed/zU27kxU0A_0?si=XEPIzVL3W5sPRsbF" },
-                    { type: "img", src: "images/details/GWU_detail1.jpg" }
+                    { type: "video", src: "https://www.youtube.com/embed/zU27kxU0A_0?si=XEPIzVL3W5sPRsbF" }
                 ]
             }
         },
@@ -75,8 +72,13 @@ document.addEventListener("DOMContentLoaded", () => {
                     { type: "video", src: "https://www.youtube.com/embed/5WAN2gr5eaA?si=8OAf5P_eOFfePKDh" },
                     { type: "video", src: "https://www.youtube.com/embed/EinZV6NWQts?si=po8u2Q14fsdUNyit" },
                     { type: "video", src: "https://www.youtube.com/embed/ZVgVh1wLJDU?si=_F5FT8Zp8FfGyHq1" },
-                    { type: "img", src: "images/details/IBD_detail1.jpg" }
-                    
+                    { type: "img", src: "images/IBD_1.jpg" },
+                    { type: "img", src: "images/IBD_2.jpg" },
+                    { type: "img", src: "images/IBD_3.jpg" },
+                    { type: "img", src: "images/IBD_4.jpg" },
+                    { type: "img", src: "images/IBD_5.jpg" },
+                    { type: "img", src: "images/IBD_6.jpg" },
+                    { type: "img", src: "images/IBD_7.jpg" }
                 ]
             }
         },
@@ -86,7 +88,9 @@ document.addEventListener("DOMContentLoaded", () => {
             details: {
                 summary: "Resumen de proyecto.",
                 media: [
-                    { type: "video", src: "https://www.youtube.com/embed/ERc4cMURkxE?si=hGuH1WZFNpXtWYDZ" }
+                    { type: "video", src: "https://www.youtube.com/embed/ERc4cMURkxE?si=hGuH1WZFNpXtWYDZ" },
+                    { type: "gif", src: "images/ncd_1.gif" },
+                    { type: "gif", src: "images/ncd_2.gif" }
                 ]
             }
         },
@@ -106,7 +110,6 @@ document.addEventListener("DOMContentLoaded", () => {
             details: {
                 summary: "Resumen de proyecto.",
                 media: [
-                    { type: "img", src: "images/details/QUICKCHARGE_detail1.jpg" },
                     { type: "video", src: "https://www.youtube.com/embed/mDnFu3_8k50?si=e-DYq1yXa7bVBRA7" }
                 ]
             }
@@ -138,7 +141,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 summary: "Resumen de proyecto.",
                 media: [
                     { type: "video", src: "https://www.youtube.com/embed/i51G3OJIif8?si=-INx_G1ucOJ5xrYW" },
-                    { type: "img", src: "images/details/sitetracker_detail1.jpg" }
                 ]
             }
         },
@@ -149,7 +151,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 summary: "Resumen de proyecto. Falta video en yt.",
                 media: [
                     { type: "video", src: "https://www.youtube.com/embed/comedyAnimationVideoID" },
-                    { type: "img", src: "images/details/caveman_detail1.jpg" },
+                    { type: "img", src: "images/caveman_1.jpeg" },
+                    { type: "img", src: "images/caveman_2.jpeg" },
+                    { type: "img", src: "images/caveman_3.jpeg" },
+                    { type: "img", src: "images/caveman_4.jpeg" }
                 ]
             }
         },
@@ -229,36 +234,31 @@ document.addEventListener("DOMContentLoaded", () => {
     
     function showDetails(project, index) {
         infoColumn.innerHTML = `<h2>${project.title}</h2><p>${project.details.summary}</p>`;
-    
+        
         contentColumn.innerHTML = '';
         project.details.media.forEach(mediaItem => {
+            const wrapper = document.createElement("div");
+            wrapper.classList.add("media-wrapper");
+    
             if (mediaItem.type === "img") {
                 const imgElement = document.createElement("img");
                 imgElement.src = mediaItem.src;
-                imgElement.style.width = "auto";
-                imgElement.style.maxWidth = "100%";
-                imgElement.style.maxHeight = "70vh";
-                imgElement.style.display = "block";
-                imgElement.style.margin = "auto";
-                imgElement.style.objectFit = "contain";
-                contentColumn.appendChild(imgElement);
+                wrapper.appendChild(imgElement);
             } else if (mediaItem.type === "video") {
                 const iframeElement = document.createElement("iframe");
                 iframeElement.src = mediaItem.src;
                 iframeElement.allow = "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture";
                 iframeElement.allowFullscreen = true;
-                iframeElement.style.width = "auto";
-                iframeElement.style.maxWidth = "100%";
-                iframeElement.style.maxHeight = "70vh";
-                iframeElement.style.display = "block";
-                iframeElement.style.margin = "auto";
-                contentColumn.appendChild(iframeElement);
+                wrapper.appendChild(iframeElement);
             }
+    
+            contentColumn.appendChild(wrapper);
         });
-    
+        
         detailView.classList.add("visible");
-    
         smoothScrollToTop(1000);
     }
+    
+    
     
 });
