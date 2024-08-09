@@ -27,9 +27,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 summary: "Resumen de proyecto.",
                 media: [
                     { type: "video", src: "https://www.youtube.com/embed/Ytm0Zh1-k5I?si=FpYMZJs4tNxmSaGh" },
-                    { type: "img", src: "images/dc_1.jpeg" },
-                    { type: "img", src: "images/dc_2.jpeg" },
-                    { type: "img", src: "images/dc_3.jpeg" }
+                    { type: "img", src: "images/dc_1.webp" },
+                    { type: "img", src: "images/dc_2.webp" },
+                    { type: "img", src: "images/dc_3.webp" }
                 ]
             }
         },
@@ -72,13 +72,13 @@ document.addEventListener("DOMContentLoaded", () => {
                     { type: "video", src: "https://www.youtube.com/embed/5WAN2gr5eaA?si=8OAf5P_eOFfePKDh" },
                     { type: "video", src: "https://www.youtube.com/embed/EinZV6NWQts?si=po8u2Q14fsdUNyit" },
                     { type: "video", src: "https://www.youtube.com/embed/ZVgVh1wLJDU?si=_F5FT8Zp8FfGyHq1" },
-                    { type: "img", src: "images/IBD_1.jpg" },
-                    { type: "img", src: "images/IBD_2.jpg" },
-                    { type: "img", src: "images/IBD_3.jpg" },
-                    { type: "img", src: "images/IBD_4.jpg" },
-                    { type: "img", src: "images/IBD_5.jpg" },
-                    { type: "img", src: "images/IBD_6.jpg" },
-                    { type: "img", src: "images/IBD_7.jpg" }
+                    { type: "img", src: "images/IBD_1.webp" },
+                    { type: "img", src: "images/IBD_2.webp" },
+                    { type: "img", src: "images/IBD_3.webp" },
+                    { type: "img", src: "images/IBD_4.webp" },
+                    { type: "img", src: "images/IBD_5.webp" },
+                    { type: "img", src: "images/IBD_6.webp" },
+                    { type: "img", src: "images/IBD_7.webp" }
                 ]
             }
         },
@@ -151,10 +151,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 summary: "Resumen de proyecto. Falta video en yt.",
                 media: [
                     { type: "video", src: "https://www.youtube.com/embed/comedyAnimationVideoID" },
-                    { type: "img", src: "images/caveman_1.jpeg" },
-                    { type: "img", src: "images/caveman_2.jpeg" },
-                    { type: "img", src: "images/caveman_3.jpeg" },
-                    { type: "img", src: "images/caveman_4.jpeg" }
+                    { type: "img", src: "images/caveman_1.webp" },
+                    { type: "img", src: "images/caveman_2.webp" },
+                    { type: "img", src: "images/caveman_3.webp" },
+                    { type: "img", src: "images/caveman_4.webp" }
                 ]
             }
         },
