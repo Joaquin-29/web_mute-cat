@@ -140,10 +140,6 @@ body.bg-white {
     overflow: visible;
 }
 
-.content-column {
-    margin-bottom: 4rem;
-}
-
 .content-column iframe,
 .content-column img {
     aspect-ratio: 16/9;
