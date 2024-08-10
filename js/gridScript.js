@@ -1,16 +1,16 @@
 document.addEventListener("DOMContentLoaded", () => {
     const projects = [
-        {
-            src: "images/covers/2024.jpg",
-            title: "Reel 2024",
-            details: {
-                // Falta video en yt.
-                summary: "",
-                media: [
-                    { type: "video", src: "https://www.youtube.com/" }
-                ]
-            }
-        },
+        // {
+        //     src: "images/covers/2024.jpg",
+        //     title: "Reel 2024",
+        //     details: {
+        //         // Falta video en yt.
+        //         summary: "",
+        //         media: [
+        //             { type: "video", src: "https://www.youtube.com/" }
+        //         ]
+        //     }
+        // },
         {
             src: "images/covers/colorado_lottery.jpg",
             title: "Colorado Lottery",
@@ -115,17 +115,17 @@ document.addEventListener("DOMContentLoaded", () => {
                 ]
             }
         },
-        {
-            src: "images/covers/reel.gif",
-            title: "Reel 2023",
-            details: {
-                // Falta video en yt.
-                summary: "",
-                media: [
-                    { type: "video", src: "https://www.youtube.com/embed/animationReelVideoID" }
-                ]
-            }
-        },
+        // {
+        //     src: "images/covers/reel.gif",
+        //     title: "Reel 2023",
+        //     details: {
+        //         // Falta video en yt.
+        //         summary: "",
+        //         media: [
+        //             { type: "video", src: "https://www.youtube.com/embed/animationReelVideoID" }
+        //         ]
+        //     }
+        // },
         {
             src: "images/covers/Shelton.jpg",
             title: "Shelton Nar Nahb",
@@ -146,21 +146,21 @@ document.addEventListener("DOMContentLoaded", () => {
                 ]
             }
         },
-        {
-            src: "images/covers/caveman.gif",
-            title: "The Caveman",
-            details: {
-                // Falta video en yt.
-                summary: "",
-                media: [
-                    { type: "video", src: "https://www.youtube.com/embed/comedyAnimationVideoID" },
-                    { type: "img", src: "images/caveman_1.webp" },
-                    { type: "img", src: "images/caveman_2.webp" },
-                    { type: "img", src: "images/caveman_3.webp" },
-                    { type: "img", src: "images/caveman_4.webp" }
-                ]
-            }
-        },
+        // {
+        //     src: "images/covers/caveman.gif",
+        //     title: "The Caveman",
+        //     details: {
+        //         // Falta video en yt.
+        //         summary: "",
+        //         media: [
+        //             { type: "video", src: "https://www.youtube.com/embed/comedyAnimationVideoID" },
+        //             { type: "img", src: "images/caveman_1.webp" },
+        //             { type: "img", src: "images/caveman_2.webp" },
+        //             { type: "img", src: "images/caveman_3.webp" },
+        //             { type: "img", src: "images/caveman_4.webp" }
+        //         ]
+        //     }
+        // },
         {
             src: "images/covers/SYLR.png",
             title: "Title 15",
