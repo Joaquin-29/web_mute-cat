@@ -4,7 +4,8 @@ document.addEventListener("DOMContentLoaded", () => {
             src: "images/covers/2024.jpg",
             title: "Reel 2024",
             details: {
-                summary: " Falta video en yt",
+                // Falta video en yt.
+                summary: "",
                 media: [
                     { type: "video", src: "https://www.youtube.com/" }
                 ]
@@ -118,7 +119,8 @@ document.addEventListener("DOMContentLoaded", () => {
             src: "images/covers/reel.gif",
             title: "Reel 2023",
             details: {
-                summary: " Falta video en yt.",
+                // Falta video en yt.
+                summary: "",
                 media: [
                     { type: "video", src: "https://www.youtube.com/embed/animationReelVideoID" }
                 ]
@@ -148,7 +150,8 @@ document.addEventListener("DOMContentLoaded", () => {
             src: "images/covers/caveman.gif",
             title: "The Caveman",
             details: {
-                summary: " Falta video en yt.",
+                // Falta video en yt.
+                summary: "",
                 media: [
                     { type: "video", src: "https://www.youtube.com/embed/comedyAnimationVideoID" },
                     { type: "img", src: "images/caveman_1.webp" },
