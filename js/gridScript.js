@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
             src: "images/covers/2024.jpg",
             title: "Reel 2024",
             details: {
-                summary: "Resumen de proyecto. Falta video en yt",
+                summary: " Falta video en yt",
                 media: [
                     { type: "video", src: "https://www.youtube.com/" }
                 ]
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
             src: "images/covers/colorado_lottery.jpg",
             title: "Colorado Lottery",
             details: {
-                summary: "Resumen de proyecto.",
+                summary: "",
                 media: [
                     { type: "video", src: "https://www.youtube.com/embed/r7Xn22dSd7A?si=iPbQfcjn709T4Hhs" },
                 ]
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
             src: "images/covers/dons_cabinets.jpg",
             title: "Don's Cabinets",
             details: {
-                summary: "Resumen de proyecto.",
+                summary: "",
                 media: [
                     { type: "video", src: "https://www.youtube.com/embed/Ytm0Zh1-k5I?si=FpYMZJs4tNxmSaGh" },
                     { type: "img", src: "images/dc_1.webp" },
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
             src: "images/covers/dragoons.jpg",
             title: "Dragoons",
             details: {
-                summary: "Resumen de proyecto.",
+                summary: "",
                 media: [
                     { type: "video", src: "https://www.youtube.com/embed/RM2udpaIsBY?si=uYwXnbaSkcGqNali" }
                 ]
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
             src: "images/covers/Friends_with_nature.gif",
             title: "Friends with Nature",
             details: {
-                summary: "Resumen de proyecto.",
+                summary: "",
                 media: [
                     { type: "video", src: "https://www.youtube.com/embed/nnWqfMagt20?si=vKIdf5VrNQJGTYVG" }
                 ]
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
             src: "images/covers/GWU.gif",
             title: "GWU",
             details: {
-                summary: "Resumen de proyecto.",
+                summary: "",
                 media: [
                     { type: "video", src: "https://www.youtube.com/embed/zU27kxU0A_0?si=XEPIzVL3W5sPRsbF" }
                 ]
@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
             src: "images/covers/IBD.jpg",
             title: "IBD",
             details: {
-                summary: "Resumen de proyecto.",
+                summary: "",
                 media: [
                     { type: "video", src: "https://www.youtube.com/embed/5WAN2gr5eaA?si=8OAf5P_eOFfePKDh" },
                     { type: "video", src: "https://www.youtube.com/embed/EinZV6NWQts?si=po8u2Q14fsdUNyit" },
@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
             src: "images/covers/mcd.jpg",
             title: "MCD Coffee Day",
             details: {
-                summary: "Resumen de proyecto.",
+                summary: "",
                 media: [
                     { type: "video", src: "https://www.youtube.com/embed/ERc4cMURkxE?si=hGuH1WZFNpXtWYDZ" },
                     { type: "gif", src: "images/ncd_1.gif" },
@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", () => {
             src: "images/covers/Osito.jpg",
             title: "iPlayMe2",
             details: {
-                summary: "Resumen de proyecto.",
+                summary: "",
                 media: [
                     { type: "video", src: "https://www.youtube.com/embed/WYvxJKHu1EE?si=tTFkuMxJitQ6m4Xh" },
                 ]
@@ -108,7 +108,7 @@ document.addEventListener("DOMContentLoaded", () => {
             src: "images/covers/QUICKCHARGE.jpg",
             title: "QUICKCHARGE",
             details: {
-                summary: "Resumen de proyecto.",
+                summary: "",
                 media: [
                     { type: "video", src: "https://www.youtube.com/embed/mDnFu3_8k50?si=e-DYq1yXa7bVBRA7" }
                 ]
@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", () => {
             src: "images/covers/reel.gif",
             title: "Reel 2023",
             details: {
-                summary: "Resumen de proyecto. Falta video en yt.",
+                summary: " Falta video en yt.",
                 media: [
                     { type: "video", src: "https://www.youtube.com/embed/animationReelVideoID" }
                 ]
@@ -128,7 +128,7 @@ document.addEventListener("DOMContentLoaded", () => {
             src: "images/covers/Shelton.jpg",
             title: "Shelton Nar Nahb",
             details: {
-                summary: "Resumen de proyecto.",
+                summary: "",
                 media: [
                     { type: "video", src: "https://www.youtube.com/embed/vVy80-rsOQk?si=I9ovF0gQ3y_JykZi" }
                 ]
@@ -138,7 +138,7 @@ document.addEventListener("DOMContentLoaded", () => {
             src: "images/covers/sitetracker.jpg",
             title: "Sitetracker",
             details: {
-                summary: "Resumen de proyecto.",
+                summary: "",
                 media: [
                     { type: "video", src: "https://www.youtube.com/embed/i51G3OJIif8?si=-INx_G1ucOJ5xrYW" },
                 ]
@@ -148,7 +148,7 @@ document.addEventListener("DOMContentLoaded", () => {
             src: "images/covers/caveman.gif",
             title: "The Caveman",
             details: {
-                summary: "Resumen de proyecto. Falta video en yt.",
+                summary: " Falta video en yt.",
                 media: [
                     { type: "video", src: "https://www.youtube.com/embed/comedyAnimationVideoID" },
                     { type: "img", src: "images/caveman_1.webp" },
@@ -162,7 +162,7 @@ document.addEventListener("DOMContentLoaded", () => {
             src: "images/covers/SYLR.png",
             title: "Title 15",
             details: {
-                summary: "Resumen de proyecto.",
+                summary: "",
                 media: [
                     { type: "video", src: "https://www.youtube.com/embed/zCd0HCtVo60?si=OmmqBF5hC8xtPzzn" },
                 ]
