@@ -90,8 +90,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 summary: "",
                 media: [
                     { type: "video", src: "https://www.youtube.com/embed/ERc4cMURkxE?si=hGuH1WZFNpXtWYDZ" },
-                    { type: "gif", src: "images/ncd_1.gif" },
-                    { type: "gif", src: "images/ncd_2.gif" }
+                    { type: "img", src: "images/ncd_1.gif" },
+                    { type: "img", src: "images/ncd_2.gif" }
                 ]
             }
         },
