@@ -142,7 +142,6 @@ body.bg-white {
 
 .content-column iframe,
 .content-column img {
-    aspect-ratio: 16/9;
     display: block;
     margin: auto;
     margin-bottom: 1rem;
@@ -158,6 +157,20 @@ body.bg-white {
     top: 0;
     max-width: 300px;
     font-size: larger;
+}
+
+.content-column img.gif {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+}
+
+.content-column iframe,
+.content-column img:not(.gif) {
+    aspect-ratio: 16/9;
 }
 
 @media (max-width: 1500px) {

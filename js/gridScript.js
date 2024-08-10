@@ -235,6 +235,11 @@ document.addEventListener("DOMContentLoaded", () => {
             if (mediaItem.type === "img") {
                 const imgElement = document.createElement("img");
                 imgElement.src = mediaItem.src;
+
+                if (mediaItem.type === "img" && mediaItem.src.endsWith(".gif")) {
+                    imgElement.classList.add("gif");
+                }
+
                 wrapper.appendChild(imgElement);
             } else if (mediaItem.type === "video") {
                 const iframeElement = document.createElement("iframe");
