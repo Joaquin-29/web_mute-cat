@@ -71,6 +71,7 @@
 
                 const result = await response.json();
                 showAlert(result.message, "success");
+                clearForm(); // Vaciar los campos del formulario
             } catch (error) {
                 console.error("Error:", error);
                 showAlert("Failed to send message.", "error");
@@ -90,6 +91,14 @@
             setTimeout(() => {
                 alertBox.remove();
             }, 3000);
+        }
+
+        function clearForm() {
+            document.querySelector('input[name="first-name"]').value = '';
+            document.querySelector('input[name="last-name"]').value = '';
+            document.querySelector('input[name="email"]').value = '';
+            document.querySelector('input[name="subject"]').value = '';
+            document.querySelector('textarea[name="message"]').value = '';
         }
 
     </script>
