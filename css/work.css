@@ -1,7 +1,15 @@
-html, body {
+@font-face {
+    font-family: 'Brandon medium';
+    src: url('../fonts/Brandon_med.otf') format('opentype');
+}
+
+html,
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Brandon medium', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body.work-page {
@@ -9,13 +17,37 @@ body.work-page {
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
-    background-color: #febe01;
     width: 100%;
+    overflow: auto;
+}
+
+body.hidden {
+    opacity: 0;
+    transition: opacity 1s ease-in-out, background-color 1s ease-in-out;
+    background-color: #febe01;
+}
+
+body.visible {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+    background-color: #febe01;
+}
+
+body.bg-white {
+    background-color: white;
+}
+
+#navbar {
+    width: 100%;
+    color: white;
+    text-align: center;
+    top: 0;
+    z-index: 1000;
 }
 
 .image-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
     gap: 0;
     width: 100%;
     padding: 0;
@@ -36,6 +68,7 @@ body.work-page {
     padding-top: 100%;
     position: relative;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .image-item img {
@@ -99,14 +132,69 @@ body.work-page {
     opacity: 1;
 }
 
-@media (max-width: 600px) {
+.detail-view {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    overflow: visible;
+}
+
+.content-column iframe,
+.content-column img {
+    aspect-ratio: 16/9;
+    display: block;
+    margin: auto;
+    margin-bottom: 1rem;
+    border: transparent;
+    width: 50%;
+    height: auto;
+    max-height: 100%;
+}
+
+.info-column {
+    padding-left: 5rem;
+    position: sticky;
+    top: 0;
+    max-width: 300px;
+    font-size: larger;
+}
+
+@media (max-width: 1500px) {
     .image-grid {
-        grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+    }
+
+    .info-column {
+        position: static;
+        padding-left: 1rem;
+        margin-left: 0;
+    }
+
+    .content-column iframe,
+    .content-column img {
+        width: 75%;
+        border: transparent;
     }
 }
 
-#navbar {
-    width: 100%;
-    color: white;
-    text-align: center;
+@media (max-width: 800px) {
+    .image-grid {
+        grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    }
+
+    .detail-view {
+        flex-direction: column;
+    }
+
+    .content-column iframe,
+    .content-column img {
+        width: 100%;
+    }
+
+    .info-column {
+        position: static;
+        padding-left: 1rem;
+        margin-left: 0;
+    }
 }

@@ -4,19 +4,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Mute-cat</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/contact.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
-<body class="hidden">
+<body>
     <div id="navbar"></div>
-    <div class="contact">
-        <h1>Contact</h1>
-        <p>For any inquiries, please contact me at:</p>
+
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form id="contact-form">
+            <div class="name-fields">
+                <input type="text" name="first-name" placeholder="First Name" required>
+                <input type="text" name="last-name" placeholder="Last Name" required>
+            </div>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="text" name="subject" placeholder="Subject" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+
+        <div class="contact-info">
+            <p class="name">Fernando</p>
+            <p>T: +598 99 743 474</p>
+            <p>E: <a href="mailto:fernando@mute-cat.com">fernando@mute-cat.com</a></p>
+
+            <p class="name">Florencia</p>
+            <p>T: +598 92 829 982</p>
+            <p>E: <a href="mailto:florencia@mute-cat.com">florencia@mute-cat.com</a></p>
+
+            <p class="location">Punta del Este, Uruguay</p>
+            <p>Follow us on <a href="https://www.instagram.com/mute_cat2024" target="_blank">Instagram</a></p>
+            <p>Follow us on <a href="https://www.youtube.com/@Mute-cat" target="_blank">YouTube</a></p>
+        </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
     <script src="js/navbar.js"></script>
+    <script>
+        document.getElementById("contact-form").addEventListener("submit", async function (event) {
+            event.preventDefault();
+
+            const submitButton = event.target.querySelector("button");
+            submitButton.classList.add("loading");
+            submitButton.disabled = true;
+            submitButton.textContent = "Sending";
+
+            const formData = {
+                "first-name": document.querySelector('input[name="first-name"]').value,
+                "last-name": document.querySelector('input[name="last-name"]').value,
+                "email": document.querySelector('input[name="email"]').value,
+                "subject": document.querySelector('input[name="subject"]').value,
+                "message": document.querySelector('textarea[name="message"]').value
+            };
+
+            try {
+                const response = await fetch("https://dlbhktie2ggmdxidyz72etzyu40scuiy.lambda-url.us-east-2.on.aws/", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(formData)
+                });
+
+                const result = await response.json();
+                showAlert(result.message, "success");
+                clearForm(); // Vaciar los campos del formulario
+            } catch (error) {
+                console.error("Error:", error);
+                showAlert("Failed to send message.", "error");
+            } finally {
+                submitButton.classList.remove("loading");
+                submitButton.disabled = false;
+                submitButton.textContent = "Send Message";
+            }
+        });
+
+        function showAlert(message, type) {
+            const alertBox = document.createElement("div");
+            alertBox.textContent = message;
+            alertBox.className = `alert ${type}`;
+            document.body.appendChild(alertBox);
+
+            setTimeout(() => {
+                alertBox.remove();
+            }, 3000);
+        }
+
+        function clearForm() {
+            document.querySelector('input[name="first-name"]').value = '';
+            document.querySelector('input[name="last-name"]').value = '';
+            document.querySelector('input[name="email"]').value = '';
+            document.querySelector('input[name="subject"]').value = '';
+            document.querySelector('textarea[name="message"]').value = '';
+        }
+
+    </script>
+
 </body>
 
 </html>

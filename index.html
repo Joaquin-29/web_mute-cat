@@ -5,24 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mute Cat</title>
-
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css">
 </head>
 
 <body class="index-page">
-    <div class="loader-container">
-        <img src="images/Logo-2.png" alt="Logo" class="logo">
-        <img src="images/Logo_1.png" alt="Text Image">
-        <a href="work.html" class="button" id="go-to-work-button">Go to Work</a>
-    </div>
+    <img src="images/index/logo.png" alt="Logo" class="logo">
+    <img src="images/index/hand.png" alt="hand image" class="hand">
+    <a href="work.html" class="button" id="enter-button">ENTER</a>
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const body = document.body;
             body.classList.add('loaded');
 
-            const button = document.getElementById('go-to-work-button');
+            const button = document.getElementById('enter-button');
             button.addEventListener('click', function (event) {
                 event.preventDefault();
                 body.classList.add('fade-out');
@@ -30,6 +29,10 @@
                     window.location.href = 'work.html';
                 }, 1000);
             });
+
+            setTimeout(function () {
+                document.querySelector('.hand').classList.add('animate');
+            }, 500);
         });
     </script>
 </body>

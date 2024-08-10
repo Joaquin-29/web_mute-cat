@@ -1,20 +1,193 @@
-.contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #f9f9f9;
-    text-align: center;
-}
-
-.contact h1 {
-    font-size: 3rem;
+body {
+    margin: 0;
+    padding: 0;
     color: #333;
 }
 
-.contact p {
-    font-size: 1.25rem;
-    color: #666;
-    margin-top: 1rem;
+#navbar {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 1em;
+    color: #444;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.name-fields {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.name-fields input {
+    width: 48%;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #555;
+    outline: none;
+}
+
+form textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+form button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+@keyframes loadingDots {
+    0% {
+        content: '.';
+    }
+    33% {
+        content: '..';
+    }
+    66% {
+        content: '...';
+    }
+    100% {
+        content: '';
+    }
+}
+
+button.loading::after {
+    content: '';
+    animation: loadingDots 1s infinite;
+    font-size: 1.2em;
+    margin-left: 10px;
+}
+
+.contact-info {
+    text-align: left;
+    margin-top: 2em;
+}
+
+.contact-info p {
+    margin: 0.5em 0;
+    font-size: 1em;
+    color: #444;
+}
+
+.contact-info p.name {
+    margin-top: 1em;
+}
+
+.contact-info p.location {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.contact-info a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #0056b3;
+}
+
+.alert {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #fff;
+    z-index: 1000;
+    opacity: 0;
+    animation: fadeInOut 3s forwards;
+}
+
+.alert.success {
+    background-color: #28a745;
+}
+
+.alert.error {
+    background-color: #dc3545;
+}
+
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 0;
+    }
+    10%, 90% {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .name-fields {
+        flex-direction: column;
+    }
+
+    .container {
+        background-color: white;
+    }
+
+    .name-fields input {
+        width: 100%;
+    }
+
+    .contact-info {
+        text-align: center;
+    }
+
+    .alert {
+        width: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 0.9em;
+        padding: 10px 15px;
+    }
 }

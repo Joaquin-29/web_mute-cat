@@ -1,13 +1,3 @@
-@font-face {
-    font-family: 'Brandon medium';
-    src: url(fonts/Brandon_med.otf) format(opentype);
-}
-
-body {
-    margin: 0;
-    font-family: 'Brandon medium', sans-serif;
-}
-
 html, body {
     margin: 0;
     padding: 0;
@@ -15,15 +5,17 @@ html, body {
 
 .navbar {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     background-color: #febe01;
-    padding: 1.25rem 1rem;
-    font-weight: 700;
-    font-size: large;
+    padding: 1rem 1rem;
     user-select: none;
     width: 100%;
     box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .navbar img {
@@ -33,34 +25,57 @@ html, body {
 
 .navbar ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     display: flex;
     align-items: center;
     flex: 1;
     justify-content: flex-end;
+    padding: 0;
+    margin: 0;
 }
 
 .navbar li {
     margin: 0 1rem;
+    position: relative;
 }
 
 .navbar a {
     color: white;
     text-decoration: none;
     padding: 0.5rem 1rem;
-    transition: background-color 0.3s, color 0.3s;
-    border-radius: 0.25rem;
+    font-size: larger;
+    transition: color 0.3s, box-shadow 0.3s;
+    position: relative;
 }
 
-.navbar a:not(:has(img)):hover {
-    background-color: #febe01;
+.navbar a::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 0.2rem;
+    background-color: #fff;
+    transition: width 0.3s, left 0.3s;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.navbar a.active {
     color: #fff;
-    border-radius: 0.25rem;
+    font-weight: bold;
+}
+
+.navbar a.active::after {
+    width: 100%;
+    left: 0;
 }
 
 .navbar .social-icons a {
-    font-size: 2.2rem;
+    font-size: 2rem;
     display: flex;
     align-items: center;
 }
@@ -74,10 +89,21 @@ html, body {
     color: white;
 }
 
-@media (max-width: 768px) {
+.navbar .logo a::after {
+    display: none;
+}
+
+@media (max-width: 800px) {
     .navbar {
         flex-direction: column;
         font-size: large;
+        align-items: center;
+        padding-top: 1rem;
+    }
+
+    .navbar img {
+        height: 5rem;
+        vertical-align: middle;
     }
 
     .navbar ul {
@@ -90,6 +116,7 @@ html, body {
 
     .navbar ul.show {
         display: flex;
+        align-items: center;
     }
 
     .navbar-toggle {
