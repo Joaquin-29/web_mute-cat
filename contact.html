@@ -47,6 +47,11 @@
         document.getElementById("contact-form").addEventListener("submit", async function (event) {
             event.preventDefault();
 
+            const submitButton = event.target.querySelector("button");
+            submitButton.classList.add("loading");
+            submitButton.disabled = true;
+            submitButton.textContent = "Sending";
+
             const formData = {
                 "first-name": document.querySelector('input[name="first-name"]').value,
                 "last-name": document.querySelector('input[name="last-name"]').value,
@@ -65,12 +70,28 @@
                 });
 
                 const result = await response.json();
-                alert(result.message);
+                showAlert(result.message, "success");
             } catch (error) {
                 console.error("Error:", error);
-                alert("Failed to send message.");
+                showAlert("Failed to send message.", "error");
+            } finally {
+                submitButton.classList.remove("loading");
+                submitButton.disabled = false;
+                submitButton.textContent = "Send Message";
             }
         });
+
+        function showAlert(message, type) {
+            const alertBox = document.createElement("div");
+            alertBox.textContent = message;
+            alertBox.className = `alert ${type}`;
+            document.body.appendChild(alertBox);
+
+            setTimeout(() => {
+                alertBox.remove();
+            }, 3000);
+        }
+
     </script>
 
 </body>

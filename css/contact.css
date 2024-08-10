@@ -83,6 +83,28 @@ form button:hover {
     background-color: #555;
 }
 
+@keyframes loadingDots {
+    0% {
+        content: '.';
+    }
+    33% {
+        content: '..';
+    }
+    66% {
+        content: '...';
+    }
+    100% {
+        content: '';
+    }
+}
+
+button.loading::after {
+    content: '';
+    animation: loadingDots 1s infinite;
+    font-size: 1.2em;
+    margin-left: 10px;
+}
+
 .contact-info {
     text-align: left;
     margin-top: 2em;
@@ -113,6 +135,37 @@ form button:hover {
     color: #0056b3;
 }
 
+.alert {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #fff;
+    z-index: 1000;
+    opacity: 0;
+    animation: fadeInOut 3s forwards;
+}
+
+.alert.success {
+    background-color: #28a745;
+}
+
+.alert.error {
+    background-color: #dc3545;
+}
+
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 0;
+    }
+    10%, 90% {
+        opacity: 1;
+    }
+}
+
 @media (max-width: 768px) {
     .name-fields {
         flex-direction: column;
@@ -128,5 +181,13 @@ form button:hover {
 
     .contact-info {
         text-align: center;
+    }
+
+    .alert {
+        width: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 0.9em;
+        padding: 10px 15px;
     }
 }
