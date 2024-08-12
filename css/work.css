@@ -156,7 +156,7 @@ body.bg-white {
     position: sticky;
     top: 0;
     max-width: 300px;
-    font-size: larger;
+    font-size: 0.7rem;
 }
 
 .content-column img.gif {
@@ -179,14 +179,12 @@ body.bg-white {
     }
 
     .info-column {
-        position: static;
         padding-left: 1rem;
-        margin-left: 0;
     }
 
     .content-column iframe,
     .content-column img {
-        width: 75%;
+        width: 70%;
         border: transparent;
     }
 }
@@ -206,8 +204,10 @@ body.bg-white {
     }
 
     .info-column {
-        position: static;
-        padding-left: 1rem;
-        margin-left: 0;
+        position: relative;
+        padding: 0;
+        text-align: center;
+        max-width: none;
+        font-size: 0.8rem;
     }
 }
