@@ -107,22 +107,32 @@ html, body {
     }
 
     .navbar ul {
-        order: 2;
-        display: none;
+        list-style-type: none;
+        display: flex;
+        align-items: center;
         flex-direction: column;
         width: 100%;
         gap: 1rem;
+        padding: 0;
+        margin: 0;
+        max-height: 0; /* Oculta el menú por defecto */
+        overflow: hidden; /* Oculta el contenido que exceda el max-height */
+        transition: max-height 0.5s ease-out; /* Transición suave */
     }
-
+    
     .navbar ul.show {
-        display: flex;
-        align-items: center;
-    }
+        max-height: 500px; /* Ajusta esto según la altura máxima esperada del menú */
+    }    
 
     .navbar-toggle {
         display: block;
         margin-bottom: 1rem;
-    }
+        font-size: 2rem;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+    }    
 
     .navbar .social-icons {
         justify-content: center;
