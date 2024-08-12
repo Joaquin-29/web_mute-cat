@@ -1,16 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
     const projects = [
-        // {
-        //     src: "images/covers/2024.jpg",
-        //     title: "Reel 2024",
-        //     details: {
-        //         // Falta video en yt.
-        //         summary: "",
-        //         media: [
-        //             { type: "video", src: "https://www.youtube.com/" }
-        //         ]
-        //     }
-        // },
+        {
+            src: "images/covers/2024.jpg",
+            title: "Reel 2024",
+            details: {
+                summary: "",
+                media: [
+                    { type: "video", src: "https://www.youtube.com/embed/MeJZcy--XxU?si=Wc36B6D0O20_gm0k" }
+                ]
+            }
+        },
         {
             src: "images/covers/colorado_lottery.jpg",
             title: "Colorado Lottery",
@@ -115,17 +114,16 @@ document.addEventListener("DOMContentLoaded", () => {
                 ]
             }
         },
-        // {
-        //     src: "images/covers/reel.gif",
-        //     title: "Reel 2023",
-        //     details: {
-        //         // Falta video en yt.
-        //         summary: "",
-        //         media: [
-        //             { type: "video", src: "https://www.youtube.com/embed/animationReelVideoID" }
-        //         ]
-        //     }
-        // },
+        {
+            src: "images/covers/reel.gif",
+            title: "Reel 2023",
+            details: {
+                summary: "",
+                media: [
+                    { type: "video", src: "https://www.youtube.com/embed/l57h0yNdU7Q?si=uGKn8O5f8a_-LiMc" }
+                ]
+            }
+        },
         {
             src: "images/covers/Shelton.jpg",
             title: "Shelton Nar Nahb",
