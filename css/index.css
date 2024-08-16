@@ -38,11 +38,12 @@ body.fade-out {
 
 @keyframes rockOn {
     0% { transform: rotate(0deg); }
-    16.67% { transform: rotate(-6deg); }
-    33.33% { transform: rotate(6deg); }
-    50% { transform: rotate(-6deg); }
-    66.67% { transform: rotate(6deg); }
-    83.33% { transform: rotate(-6deg); }
+    14.29% { transform: rotate(-6deg); }
+    28.57% { transform: rotate(6deg); }
+    42.86% { transform: rotate(-6deg); }
+    57.14% { transform: rotate(6deg); }
+    71.43% { transform: rotate(-6deg); }
+    85.71% { transform: rotate(6deg); }
     100% { transform: rotate(0deg); }
 }
 
@@ -56,7 +57,7 @@ body.fade-out {
 }
 
 .hand.animate {
-    animation: rockOn 3.2s ease-in-out;
+    animation: rockOn 3.5s ease-in-out;
 }
 
 .button {
