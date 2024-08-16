@@ -111,7 +111,7 @@ button.loading::after {
 }
 
 .contact-info p {
-    margin: 0.5em 0;
+    margin: 0 0;
     font-size: 1em;
     color: #444;
 }
@@ -121,8 +121,8 @@ button.loading::after {
 }
 
 .contact-info p.location {
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .contact-info a {
