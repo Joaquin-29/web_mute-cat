@@ -29,13 +29,13 @@
 
         <div class="contact-info">
             <p class="name">T: +598 99 743 474</p>
-            <p>E: <a href="mailto:fernando@mute-cat.com">fernando@mute-cat.com</a></p>
+            <p>E: <a class="color">fernando@mute-cat.com</a></p>
 
-            <p>E: <a href="mailto:florencia@mute-cat.com">florencia@mute-cat.com</a></p>
+            <p>E: <a class="color">florencia@mute-cat.com</a></p>
 
             <p class="location">Punta del Este, Uruguay</p>
-            <p>Follow us on <a href="https://www.instagram.com/mute_cat2024" target="_blank">Instagram</a></p>
-            <p>Follow us on <a href="https://www.youtube.com/@Mute-cat" target="_blank">YouTube</a></p>
+            <p>Follow us on <a href="https://www.instagram.com/mute_cat2024" target="_blank" class="color">Instagram</a></p>
+            <p>Follow us on <a href="https://www.youtube.com/@Mute-cat" target="_blank" class="color">YouTube</a></p>
         </div>
     </div>
 
@@ -68,7 +68,7 @@
 
                 const result = await response.json();
                 showAlert(result.message, "success");
-                clearForm(); // Vaciar los campos del formulario
+                clearForm();
             } catch (error) {
                 console.error("Error:", error);
                 showAlert("Failed to send message.", "error");
