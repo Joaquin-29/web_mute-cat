@@ -30,7 +30,7 @@ body.hidden {
 body.visible {
     opacity: 1;
     transition: opacity 1s ease-in-out;
-    background-color: #febe01;
+    background-color: white;
 }
 
 body.bg-white {
