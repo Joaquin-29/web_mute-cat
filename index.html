@@ -21,7 +21,26 @@
             const body = document.body;
             body.classList.add('loaded');
 
+            const hand = document.querySelector('.hand');
+            const logo = document.querySelector('.logo');
             const button = document.getElementById('enter-button');
+
+            // Trigger the hand animation
+            setTimeout(function () {
+                hand.classList.add('animate');
+            }, 500);
+
+            // After the hand animation, fade it out and show the logo and button
+            hand.addEventListener('animationend', function () {
+                hand.classList.add('fade-out');
+
+                hand.addEventListener('animationend', function () {
+                    hand.style.display = 'none'; // Hide the hand after fade out
+                    logo.style.display = 'block'; // Show the logo
+                    button.style.display = 'block'; // Show the button
+                }, { once: true });
+            }, { once: true });
+
             button.addEventListener('click', function (event) {
                 event.preventDefault();
                 body.classList.add('fade-out');
@@ -29,11 +48,8 @@
                     window.location.href = 'work.html';
                 }, 1000);
             });
-
-            setTimeout(function () {
-                document.querySelector('.hand').classList.add('animate');
-            }, 500);
         });
+
     </script>
 </body>
 

@@ -131,3 +131,48 @@ body.fade-out {
         display: none;
     }
 }
+
+@media (max-width: 1000px) {
+    .button, .logo {
+        display: none;
+    }
+
+    .hand {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 70%;
+        left: 34%;
+        transform: translate(-50%, -50%);
+        display: block;
+    }
+
+    body {
+        flex-direction: column;
+    }
+
+    .hand.animate {
+        animation: rockOn 3.5s ease-in-out, stayCentered 3.5s;
+    }
+    
+    @keyframes rockOn {
+        0% { transform: translate(-50%, -50%) rotate(0deg); }
+        14.29% { transform: translate(-50%, -50%) rotate(-6deg); }
+        28.57% { transform: translate(-50%, -50%) rotate(6deg); }
+        42.86% { transform: translate(-50%, -50%) rotate(-6deg); }
+        57.14% { transform: translate(-50%, -50%) rotate(6deg); }
+        71.43% { transform: translate(-50%, -50%) rotate(-6deg); }
+        85.71% { transform: translate(-50%, -50%) rotate(6deg); }
+        100% { transform: translate(-50%, -50%) rotate(0deg); }
+    }
+    
+    @keyframes fadeOut {
+        to {
+            opacity: 0;
+        }
+    }
+    
+    .hand.fade-out {
+        animation: fadeOut 1s forwards;
+    }
+}
