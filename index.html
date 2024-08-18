@@ -25,19 +25,24 @@
             const logo = document.querySelector('.logo');
             const button = document.getElementById('enter-button');
 
-            // Trigger the hand animation
             setTimeout(function () {
                 hand.classList.add('animate');
             }, 500);
 
-            // After the hand animation, fade it out and show the logo and button
             hand.addEventListener('animationend', function () {
                 hand.classList.add('fade-out');
 
                 hand.addEventListener('animationend', function () {
-                    hand.style.display = 'none'; // Hide the hand after fade out
-                    logo.style.display = 'block'; // Show the logo
-                    button.style.display = 'block'; // Show the button
+                    hand.style.display = 'none';
+                    logo.style.opacity = '0';
+                    button.style.opacity = '0';
+                    logo.style.display = 'block';
+                    button.style.display = 'block';
+
+                    setTimeout(function () {
+                        logo.classList.add('fade-in');
+                        button.classList.add('fade-in');
+                    }, 100);
                 }, { once: true });
             }, { once: true });
 
@@ -49,6 +54,7 @@
                 }, 1000);
             });
         });
+
 
     </script>
 </body>
