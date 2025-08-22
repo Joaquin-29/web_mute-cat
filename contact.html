@@ -67,7 +67,7 @@
                 });
 
                 const result = await response.json();
-                showAlert(result.message, "success");
+                showAlert("Message sent successfully.", "success");
                 clearForm();
             } catch (error) {
                 console.error("Error:", error);
