@@ -1,12 +1,10 @@
 body {
-    margin: 0;
-    padding: 0;
     color: #333;
+    font-family: 'NimbusSanL', sans-serif;
 }
 
 #navbar {
     width: 100%;
-    box-sizing: border-box;
 }
 
 .container {
@@ -16,7 +14,6 @@ body {
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
-    box-sizing: border-box;
     text-align: center;
 }
 
@@ -53,7 +50,6 @@ form textarea {
     border-radius: 5px;
     font-size: 1em;
     background-color: #f9f9f9;
-    box-sizing: border-box;
 }
 
 form input:focus,

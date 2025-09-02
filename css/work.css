@@ -1,14 +1,6 @@
-@font-face {
-    font-family: 'Brandon medium';
-    src: url('../fonts/Brandon_med.otf') format('opentype');
-}
-
 html,
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Brandon medium', sans-serif;
+    font-family: 'NimbusSanL', sans-serif;
     scroll-behavior: smooth;
 }
 

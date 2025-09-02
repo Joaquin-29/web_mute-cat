@@ -1,8 +1,40 @@
 @font-face {
-    font-family: 'Brandon medium';
-    src: url('../fonts/Brandon_med.otf') format('opentype');
+    font-family: 'NimbusSanL';
+    src: url('fonts/NimbusSanL-Reg.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NimbusSanL';
+    src: url('fonts/NimbusSanL-Bol.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NimbusSanL';
+    src: url('fonts/NimbusSanL-RegIta.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'NimbusSanL';
+    src: url('fonts/NimbusSanL-BolIta.otf') format('opentype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    font-family: 'Brandon medium', sans-serif;
+    font-family: 'NimbusSanL', sans-serif;
 }
