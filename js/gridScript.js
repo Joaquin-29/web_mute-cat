@@ -1,16 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const projects = [
         {
-            src: "images/covers/2024.jpg",
-            title: "Reel 2024",
-            details: {
-                summary: "",
-                media: [
-                    { type: "video", src: "https://www.youtube.com/embed/MeJZcy--XxU?si=Wc36B6D0O20_gm0k" }
-                ]
-            }
-        },
-        {
             src: "images/covers/colorado_lottery.jpg",
             title: "Colorado Lottery",
             details: {
@@ -40,6 +30,16 @@ document.addEventListener("DOMContentLoaded", () => {
                 summary: "",
                 media: [
                     { type: "video", src: "https://www.youtube.com/embed/RM2udpaIsBY?si=uYwXnbaSkcGqNali" }
+                ]
+            }
+        },
+        {
+            src: "images/covers/2024.jpg",
+            title: "Reel 2024",
+            details: {
+                summary: "",
+                media: [
+                    { type: "video", src: "https://www.youtube.com/embed/MeJZcy--XxU?si=Wc36B6D0O20_gm0k" }
                 ]
             }
         },
