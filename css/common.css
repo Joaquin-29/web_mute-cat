@@ -38,3 +38,12 @@ html, body {
 body {
     font-family: 'NimbusSanL', sans-serif;
 }
+
+body:not(.index-page):not(.work-page) {
+    animation: pageFadeIn 0.25s ease-in;
+}
+
+@keyframes pageFadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}

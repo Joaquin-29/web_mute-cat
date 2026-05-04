@@ -61,24 +61,16 @@ body.fade-out {
 }
 
 .button {
-    position: absolute;
-    padding: 1rem 2rem;
+    position: static;
+    margin-top: 2rem;
+    margin-left: -2.5rem;
     background-color: transparent;
     color: white;
     text-decoration: none;
     border: 0.125rem solid white;
-    font-size: 1.5rem;
-    bottom: 6rem;
-    right: 10rem;
-    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.button {
-    position: static;
-    margin-top: 2rem;
-    margin-left: -2.5rem;
     font-size: 1rem;
     padding: 0.75rem 1.25rem;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .button:hover {
@@ -112,27 +104,6 @@ body.fade-out {
 }
 
 @media (max-width: 1000px) {
-    .button {
-        position: static;
-        padding: 0.75rem 1.5rem;
-        margin-top: 2rem;
-        font-size: 1.25rem;
-    }
-
-    .logo {
-        width: 14rem;
-    }
-
-    body {
-        flex-direction: column;
-    }
-
-    .hand {
-        display: none;
-    }
-}
-
-@media (max-width: 1000px) {
     .button, .logo {
         display: none;
     }
@@ -152,7 +123,7 @@ body.fade-out {
     }
 
     .hand.animate {
-        animation: rockOn 3.5s ease-in-out, stayCentered 3.5s;
+        animation: rockOn 3.5s ease-in-out;
     }
     
     @keyframes rockOn {
@@ -167,9 +138,7 @@ body.fade-out {
     }
     
     @keyframes fadeOut {
-        to {
-            opacity: 0;
-        }
+        to { opacity: 0; }
     }
     
     .hand.fade-out {
@@ -177,12 +146,8 @@ body.fade-out {
     }
 
     @keyframes fadeIn {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
+        from { opacity: 0; }
+        to { opacity: 1; }
     }
     
     .fade-in {
